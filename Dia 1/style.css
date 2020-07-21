@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.icones {
+	margin: 550px;
+}
+
+ul {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+ul li {
+	position: relative;
+	list-style: none;
+	width: 60px;
+	height: 60px;
+	margin: 0 30px;
+	transform: rotate(-30deg) skew(25deg);
+	background: #ccc;
+	border-radius: 10px !important;
+}
+
+ul li span {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	transition: 0.5s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	font-size: 30px;
+	border-radius: 10px !important;
+}
+
+ul li:hover:nth-child(1) span {
+	background-color: #3b5998;
+}
+
+ul li:hover:nth-child(2) span {
+	background-image: linear-gradient(to left top, #405DE6, #5B51D8, #833AB4, #C13584, #E1306C, #FD1D1D, #F56040, #F77737, #FCAF45, #FFDC80);
+}
+
+ul li:hover:nth-child(3) span {
+	background-color: #0072b1;
+}
+
+ul li:hover:nth-child(4) span {
+	background-color: #00acee;
+}
+
+ul li:hover:nth-child(5) span {
+	background-color: #dd4b39;
+}
+ul li:hover span:nth-child(5) {
+	transform: translate(40px, -40px);
+	opacity: 1;
+}
+
+ul li:hover span:nth-child(4) {
+	transform: translate(30px, -30px);
+	opacity: .8;
+}
+
+ul li:hover span:nth-child(3) {
+	transform: translate(20px, -20px);
+	opacity: .6;
+}
+
+ul li:hover span:nth-child(2) {
+	transform: translate(10px, -10px);
+	opacity: .4;
+}
+
+ul li:hover span:nth-child(1) {
+	transform: translate(0px, 0px);
+	opacity: .2;
+}
