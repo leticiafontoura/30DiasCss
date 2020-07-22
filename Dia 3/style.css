@@ -1,0 +1,52 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+section {
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	display: flex;
+}
+
+section div {
+	position: relative;
+	width: 50%;
+	background: #ABABAB;
+	overflow: hidden;
+}
+
+section div:nth-child(1) {
+	position: relative;
+	width: 50%;
+	background: url(https://38.media.tumblr.com/32a80a3311656b769acede252755c750/tumblr_nq5khtoTiB1uss6ndo1_1280.gif);
+	background-size: cover;
+	overflow: hidden;
+}
+
+section div h2 {
+	position: absolute;
+	white-space: nowrap;
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 20em;
+	animation: animate 4s linear infinite;
+	padding: 0;
+	margin: 10%;
+	color: black;
+}
+
+section div:nth-child(1) h2 {
+	color: white;
+	left: 100%;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translateX(-110%);
+	}
+}
