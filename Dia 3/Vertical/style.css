@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.wrapper div {
+	width: 100%;
+	height: 50vh;
+	background: #ABABAB;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	overflow: hidden;
+	position: relative;
+}
+
+.wrapper div:nth-child(1) {
+	width: 100%;
+	height: 50vh;
+	background: pink;
+}
+
+
+.wrapper div h2 {
+	position: absolute;
+/*	white-space: nowrap;*/
+	font-family: 'IBM Plex Sans', sans-serif;
+	font-size: 12em;
+	animation: animate 5s linear infinite;
+	color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper div:nth-child(1) h2 {
+	color: blue;
+	top: 80%;
+}
+
+@keyframes animate {
+	0% {
+		transform: translateY(0);
+	}
+	100% {
+		transform: translateY(-100%);
+	}
+}

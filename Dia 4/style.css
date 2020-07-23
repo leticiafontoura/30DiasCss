@@ -1,0 +1,56 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'IBM Plex Sans', sans-serif;
+} 
+
+div {
+	width: 100%;
+	height: 100vh;
+	background-color: #323232;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	width: 400px;
+	height: 60px;
+	background-color: transparent;
+	border: 4px dashed;
+	color: #d9d7fa;
+	/*border: 10px solid teal;*/
+	position: relative;
+	cursor: pointer;
+}
+
+button::before, button::after{
+	content: "";
+	width: 14px;
+	height: 4px;
+	background: #323232;
+	/*border: 5px solid blue;*/
+	transform: skewX(50deg);
+	position: absolute;
+	transition: 0.4s;
+}
+
+button::before {
+	top: -4px;
+	left: 10%;
+	background: #323232;
+}
+
+button::after {
+	bottom: -4px;
+	right: 10%;
+}
+
+button:hover::before {
+	left: 80%;
+}
+
+button:hover::after {
+	right: 80%;
+}
