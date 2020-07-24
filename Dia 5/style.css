@@ -17,9 +17,9 @@
 }
 
 p {
-	text-align: center;
+/*	text-align: center;
 	position: relative;
-	top: 40%;
+	/*top: 40%;*/*/
 }
 .pulse-one {
 	width: 200px;
@@ -31,6 +31,9 @@ p {
 	transform: scale(1);
 	animation: pulse-one 2s infinite;
 	position: relative;
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
 }
 
 @keyframes pulse-one {
@@ -60,6 +63,9 @@ p {
 	transform: scale(1);
 	animation: pulse-two 2s infinite;
 	position: relative;
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
 }
 
 @keyframes pulse-two {
@@ -89,6 +95,9 @@ p {
 	transform: scale(1);
 	animation: pulse-three 2s infinite;
 	position: relative;
+	display: flex;
+ 	align-items: center;
+  	justify-content: center;
 }
 
 @keyframes pulse-three {
@@ -109,7 +118,7 @@ p {
 }
 
 .pulse-three p {
-	top: 35%;
+	text-align: center;
 }
 .pulse-three:hover {
 	background-color: blue;
