@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'IBM Plex Sans', sans-serif;
+} 
+
+div {
+	background-color: #580C1F;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100vh;
+	align-items: center;
+}
+
+/*rotate de 45 na div pra formar a base do coração*/
+.heartbeat {
+	width: 100px;
+	height: 100px;
+	background-color: #C52233;
+	position: relative;
+	transform: rotate(45deg);
+	animation: beat 1.4s ease-in-out infinite;
+}
+
+/*transform de 50 before pra formar um dos lados redondos*/
+.heartbeat::before {
+	content: "";
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #C52233;
+	position: absolute;
+	transform: translateY(-50%);
+}
+
+.heartbeat::after {
+	content: "";
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: #C52233;
+	position: absolute;
+	transform: translateX(-50%);
+}
+
+/*rotate de 45 pra ficar "reto"*/
+
+@keyframes beat {
+	0% {transform:  rotate(45deg) scale(1);}
+    12.5% {transform:  rotate(45deg) scale(1.4);}
+    25% {transform:  rotate(45deg) scale(1);}
+    37.5% {transform:  rotate(45deg) scale(1.4);}
+    50% {transform:  rotate(45deg) scale(1.2);}
+    62.5% {transform:  rotate(45deg) scale(1.2);}
+    75% {transform:  rotate(45deg) scale(1.4);}
+    100% {transform:  rotate(45deg) scale(1);}
+}
+
+.heartbeat:hover {
+	background-color: #A7333F;
+	transition: 1s;
+}
+
+.heartbeat:hover:before {
+	background-color: #A7333F;
+	transition: 1s;
+}
+
+.heartbeat:hover:after {
+	background-color: #A7333F;
+	transition: 1s;
+} 
